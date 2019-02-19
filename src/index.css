@@ -13,7 +13,7 @@
 }
 body {
   color: #576366;
-  background: #db2b30;
+  background: #2b2823;
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
@@ -259,4 +259,18 @@ header {
 /* showcase items */
 .showcase {
   width: 50%;
+}
+
+
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
 }

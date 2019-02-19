@@ -12,11 +12,31 @@ import { switchMap } from "rxjs/operators";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Car from "./components/Car";
-import Wrench from "./components/Wrench";
+import Wrench from "./components/Wrench";  
 import Time from "./components/Time";
 import About from "./components/About";
 import firebase from "firebase/app";
 
+//react-bootstrap
+import {
+  Grid,
+  Row,
+  Col,
+  Clearfix,
+  Alert,
+  Badge,
+  Button,
+  Jumbotron,
+  FormGroup,
+  ButtonGroup,
+  ButtonToolbar,
+  DropdownButton,
+  MenuItem,
+  PageHeader,
+  Navbar
+} from "react-bootstrap";
+
+//initilize firebase
 firebase.initializeApp({
   apiKey: "AIzaSyBUGJfi6yh4Gsn1ljsN74AgNz6_IG7Bhhk",
   authDomain: "wrenchtime-b4yt.firebaseapp.com",
@@ -81,10 +101,8 @@ class App extends Component {
     } else {
       body = (
         <div>
-          <p>
-            Signed in as: {this.state.user.displayName}
-            <button onClick={this.handleSignOut}>Sign out</button>
-          </p>
+         
+          
 
           <BrowserRouter>
             <div className="container">
@@ -96,6 +114,10 @@ class App extends Component {
               <Route exact path="/components/About" component={About} />
             </div>
           </BrowserRouter>
+          <p>
+            Signed in as: {this.state.user.displayName}
+            <button onClick={this.handleSignOut}>Sign out</button>
+          </p>
         </div>
       );
     }
