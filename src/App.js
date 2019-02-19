@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import AuthService from "./AuthService";
+import AuthService from "./components/AuthService";
+import SignInDialog from "./components/SignInDialog";
 
 //this is the mess up
 
