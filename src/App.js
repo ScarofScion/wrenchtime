@@ -4,7 +4,7 @@ import AuthService from "./components/AuthService";
 import SignInDialog from "./components/SignInDialog";
 import Store from "./components/Store";
 
-//this is the mess up
+//LOOK INTO RXJS
 import { from as observableFrom } from "rxjs";
 import { switchMap } from "rxjs/operators";
 
